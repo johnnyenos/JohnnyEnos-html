@@ -1,41 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>JKE</title>
-<meta name="viewport" content="width= device-width initial-scale= 1.0">
-<meta name="description" content="Johnny Enos" />  
-<link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="wrapper">
-<header>
-  <h1>Cloud Architect</h1>
-</header>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Cloud Architect | AWS FinOps Specialist</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div id="homehero"></div>
-<main>
-<h2></h2>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I’m Your Name, a Cloud Architect with expertise in AWS, Terraform, Kubernetes, and FinOps. I specialize in building cost-effective and secure cloud environments.</p>
+            </div>
+        </section>
 
-<p><span class="resort"> Hey! </span> I have 5+ years specializing in Enterprise Computer Support and System Administration. Outstanding technical skills, superior communication, interview, and presentation abilities. Excels at working with different teams to gather information, identify relevant data and write documents to disseminate to end users. Solid understanding of remediating security vulnerabilities and experience hardening Windows and Redhat systems per RMF and STIGs. I am currently a cloud architect that utilizes AWS services like EC2, ECS, AWS Security Hub, VPC's, Auto scaling groups, and etc. 
-.</p>
-<ul>
-  
-  <li>Active Top Security Clearance</li>
-  <li>Graduated from CGTC with an A.A.S in Computer Support - May 2017</li>
-  <li>Currently enrolled at WGU: B.S. Information Technology</li>
-  <li>Certs: AWS Solutions Architect-Associate, AWS Cloud Practitioner, Security+ CE,  A+ CE, Project+,  Cloud Essentials, LPIC-Linux Essentials<li>
-  </ul>
-  <div id="contact">
-  <span class="resort">Johnny Enos</span><br>
-  156 Sinton Place<br>
-  Warner, GA 31098<br><br>
-  <a id="mobile" href="tel:478-334-1769">478-334-1769</a>
-  <span id="desktop">478-334-1769</span>
-</main>
-<footer>
-<br>
-<a href="mailto:johnnyenos@gmail.com">johnnyenos@gmail.com</a>
-</footer>
-</div>
+        <!-- Resume Section -->
+        <section id="resume" class="section" data-aos="fade-right">
+            <div class="container">
+                <h2>Resume</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Cloud Architect - ABC Corp</h3>
+                        <p>Implemented AWS cost optimization strategies, reducing cloud expenses by 25%.</p>
+                        <span>2021 - Present</span>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>DevOps Engineer - XYZ Ltd</h3>
+                        <p>Deployed CI/CD pipelines and automated infrastructure provisioning using Terraform.</p>
+                        <span>2018 - 2021</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section" data-aos="fade-left">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="project1.jpg" alt="Project 1">
+                        <h3>FinOps Dashboard</h3>
+                        <p>Developed a dashboard to monitor and optimize cloud costs.</p>
+                    </div>
+                    <div class="card">
+                        <img src="project2.jpg" alt="Project 2">
+                        <h3>Kubernetes Monitoring</h3>
+                        <p>Set up a Kubernetes cluster with Prometheus and Grafana monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
